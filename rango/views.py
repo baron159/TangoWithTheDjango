@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Sup peeps <br/><a href='/rango/about'>About</a>")
+    context_dict = {'boldmessage': "I am bold font from the context"}
+    return render(request, 'rango/index.html', context_dict)
 
 def about(request):
     return HttpResponse("This is at the About Page <br/><a href='/rango/'>Index</a>")
