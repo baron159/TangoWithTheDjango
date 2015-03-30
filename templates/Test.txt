@@ -1,1 +1,3 @@
 This is just a simple test for Pycharm and Git
+
+This is now a test for the Ubuntu PC
