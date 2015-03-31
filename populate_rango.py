@@ -47,6 +47,9 @@ def populate():
         for p in Page.objects.filter(category=c):
             print("- {0} - {1}".format(str(c), str(p)))
 
+    cat_ex1 = add_cat("Movies", 50, 17)
+    cat_ex2 = add_cat("Computers", 190, 65)
+
 
 def add_page(cat, title, url, views=0):
     p = Page.objects.get_or_create(category=cat, title=title)[0]
